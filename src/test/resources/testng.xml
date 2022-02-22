@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+	<test name="Pixel3">
+		<parameter name="platformName" value="Android" />
+		<parameter name="udid" value="emulator-5554" />
+		<parameter name="deviceName" value="Pixel_3" />
+		<parameter name="systemPort" value="10000" />
+		<parameter name="chromeDriverPort" value="11000" />
+		<classes>
+			<class name="com.rexel.runners.MyPixel3TestNGRunnerTest"/>
+		</classes>
+	</test>
+<!-- 	<test name="Pixel2XL">
+		<parameter name="platformName" value="Android" />
+		<parameter name="udid" value="emulator-5556" />
+		<parameter name="deviceName" value="Pixel_3a" />
+		<parameter name="systemPort" value="10001" />
+		<parameter name="chromeDriverPort" value="11001" />
+		<classes>
+			<class name="com.rexel.runners.MyPixel2XLTestNGRunnerTest"/>
+		</classes>
+	</test>  -->
+	<!-- <test name="iOS Browserstack">
+		<parameter name="platformName" value="Browserstack" />
+		<parameter name="udid" value="emulator-5556" />
+		<parameter name="deviceName" value="iPhone 11 Pro" />
+		<parameter name="osVersion" value="13" />
+		<parameter name="BROWSERSTACK_BUILD_NAME" value="Rexel005" />
+		<parameter name="BROWSERSTACK_APP_ID" value="a4e8df7c73193dbb40366e88d5bd56894b63d972" />
+		<parameter name="type" value="iOS" />
+		<classes>
+			<class name="com.rexel.runners.BrowserstackIosRunnerTest"/>
+		</classes>
+	</test> -->
+</suite> <!-- Suite -->
